@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background: url(./img/photo.png);
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    min-height: 95vh;
+    border-bottom: rgb(2, 2, 65) 10px solid;
+    background-position-x: px;
+    background-position-y: -750px;
+}
+nav{
+    padding: 30px;
+   
+    
+}
+.logo{
+    display: flex
+    
+    
+}
+
+.contaner{
+    padding: 10px 5%;
+}
+
+.logo h1{
+    padding: 0;
+    margin: 20px 0 0 0;
+    color: #000000;
+}
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 20px;
+
+}
+
+.nav-links{
+    margin-top: 25px;
+}
+
+nav .navbar a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#000000;
+    
+}
+
+nav .active-link{
+    color:rgb(2, 2, 65);
+    
+}
+
+nav .navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: navy;
+    position: absolute;
+    left: 8px;
+    bottom: -4px;
+    transition: 0.5s;
+    padding: 0;
+}
+
+nav .navbar a:hover::after{
+    width: 80%;
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    padding: 5% 0 0 10%;
+    
+}
+
+.hero .column-1 img{
+    border-radius: 10px;
+    
+}
+
+.hero .column-2{
+   
+    border-radius: 10px;
+    width: 50%;
+    flex-basis: 60%;
+}
+
+.hero .column-2 h1{
+    text-align: center;
+    letter-spacing: 1.1px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(2, 2, 65);
+}
+
+.hero .column-2 p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-left: 40px;
+    
+}
+.btn{
+    display: block;
+    margin: 0 0 0 45px;
+    width: fit-content;
+    background: rgb(2, 2, 65);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #080808;
+    transition: background .5s;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.btn:hover{
+    background: transparent;
+    border: rgb(2, 2, 65) 2px solid;
+    cursor: pointer;
+    color: #080808;
+}
+
+
+#about{
+    padding: 80px 0 40px 0;
+    color: #080808;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.about-col-1{
+    flex-basis: 30%;
+    margin-left: 140px;
+}
+
+.about-col-1 img{
+    width: 115%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 55%;
+    width: 90%;
+}
+.about-col-2 p{
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color:  #080808;
+}
+
+.tab-titles{
+     display: flex;
+     margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: navy;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul{
+    padding-left: 0;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.tab-contents ul li span{
+    color: navy;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+#services{
+    padding: 0 8%;
+    margin-bottom: 10%;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #ababab;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform .5s;
+    border-radius: 10px;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.services-list div:hover{
+    background: navy;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.services-list div p{
+    line-height: 20px;
+    font-size: 16px;
+}
+
+    

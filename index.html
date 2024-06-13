@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge-End High School</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+               <div class="logo">  <img src="./img/logo.png" alt="" height="70px" width="100px"> <h1>Bridge-End High School</h1></div> 
+               <div class="nav-links">
+                <a href="" class="active-link">Home</a>
+                <a href="">About</a>
+                <a href="">Admission</a>
+                <a href="">Academics</a>
+                <a href="">Co-Curricular</a>
+                <a href="">Contact Us</a>
+               </div>
+            </div>
+        </nav>
+   
+        </header>
+
+        <div class="container">
+            <div class="hero">
+                <div class="column-1">
+                  <img src="./img/director.jpg" height="700px" width="500px">
+                </div>
+                <div class="column-2">
+                      <h1> Meet Our Director</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid, dolorum inventore aperiam quis illum. Laboriosam esse voluptatum beatae aliquam aut maiores odit autem itaque unde. Quasi, maxime quo consectetur necessitatibus laborum ipsam suscipit sed. Dolore, soluta exercitationem, eveniet amet itaque accusamus iusto iure nam corporis quos ab labore libero fugit dignissimos quod iste temporibus facilis tempore praesentium explicabo et obcaecati delectus! Pariatur in inventore unde quo? Fugiat blanditiis veritatis cum qui odit repudiandae, sint vel assumenda nobis deleniti magni eligendi omnis, mollitia dolore voluptatibus ullam architecto nisi? Molestias qui animi quis. Ea fuga natus aliquid veritatis delectus est deleniti.</p>
+
+                       <a href="" class="btn">See More</a>
+
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about">
+                        <div class="about-col-1">
+                            <img src="img/photo2.png" alt="" height="700px" width="500px">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea itaque, unde laboriosam laudantium repellendus vero quo veniam harum quos facilis repellat maiores. Nulla earum reprehenderit tempore nihil eaque, ducimus quisquam at quaerat commodi fugit ipsa accusantium eius delectus deleniti in consequuntur. Dolores quidem incidunt optio provident dolorum totam cupiditate, veritatis quia quo temporibus illum delectus earum architecto, vero autem perferendis modi nobis commodi ipsa beatae quasi similique? Necessitatibus, illo. Officiis alias exercitationem quia dolorum illo ipsam ab deserunt nesciunt dolore ullam earum voluptates quisquam optio, ratione corrupti commodi temporibus pariatur maxime mollitia corporis? Sit ipsum reprehenderit aperiam iusto ea.</p>
+                               <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                               </div>
+        
+                               <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                </ul>
+                               </div>
+                               <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                </ul>
+                               </div>
+                               <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                </ul>
+                               </div>
+        
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+               <h1 class="sub-title">Services</h1>
+               <div class="services-list">
+                  <div>
+                    <i class='bx bxs-graduation' ></i></i>
+                    <h2>Educational Programmes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus dolorum eaque sint eius aut animi quaerat, nobis deserunt error!</p>
+                      <a href="">Learn More </a>
+        
+                  </div>
+                  <div>
+                    <i class='bx bx-football'></i>
+                    <h2>Sports Engagements</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus dolorum eaque sint eius aut animi quaerat, nobis deserunt error!</p>
+                      <a href="">Learn More</a>
+        
+                  </div>
+                  <div>
+                    <i class='bx bxs-universal-access'></i>
+                    <h2>National Competetions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus dolorum eaque sint eius aut animi quaerat, nobis deserunt error!</p>
+                      <a href="">Learn More</a>
+        
+                  </div>
+               </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+        
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>        
+</body>
+</html>
