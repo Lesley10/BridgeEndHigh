@@ -13,16 +13,23 @@ header{
     background-position: center;
     background-repeat: no-repeat;  
     background-size: 100%;
-    min-height: 95vh;
+    min-height: 110vh;
     border-bottom: rgb(2, 2, 65) 10px solid;
     background-position-x: px;
-    background-position-y: -750px;
+    background-position-y: -550px;
+    margin-top: 0;
 }
 nav{
-    padding: 30px;
+    padding: 5px 15px 15px 15px;
    
     
 }
+
+.active{
+   color: white;
+
+}
+
 .logo{
     display: flex
     
@@ -36,52 +43,49 @@ nav{
 .logo h1{
     padding: 0;
     margin: 20px 0 0 0;
-    color: #000000;
+    color: #ababab;
+    font-size: 30px;
 }
 nav .navbar{
     display: flex;
     justify-content: space-between;
    
-    padding: 20px;
+    padding: -10px 40px 40px 40px;
+    margin-right: 30px;
 
+}
+nav .navbar .nav-links .active{
+    color: #fff;
 }
 
 .nav-links{
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 nav .navbar a{
     text-decoration: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 17px 15px 15px 15px;
+    font-size: 15px;
     position: relative;
-    text-transform: uppercase;
     font-weight: bold;
-    color:#000000;
+    color:#ababab;    
+    transition: background 0.5s, transform .5s;
+}
+
+nav .navbar a:hover{
+    color: #fff; 
+    transform: translateX(10px);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.active-link {
+    color: navy;
     
 }
 
-nav .active-link{
-    color:rgb(2, 2, 65);
-    
-}
 
-nav .navbar a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: navy;
-    position: absolute;
-    left: 8px;
-    bottom: -4px;
-    transition: 0.5s;
-    padding: 0;
-}
 
-nav .navbar a:hover::after{
-    width: 80%;
-    
-}
 
 .hero{
     display: flex;
@@ -154,7 +158,7 @@ nav .navbar a:hover::after{
 
 
 .about-col-1{
-    flex-basis: 30%;
+    flex-basis: 35%;
     margin-left: 140px;
 }
 
@@ -164,7 +168,7 @@ nav .navbar a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 55%;
+    flex-basis: 47%;
     width: 90%;
 }
 .about-col-2 p{
@@ -178,8 +182,24 @@ nav .navbar a:hover::after{
     font-weight: bold;
     letter-spacing: 1.5px;
     color:  #080808;
+    margin: 0;
+    text-align: center;
 }
-
+.sub-title a{
+    text-decoration: none;
+    color: #080808;
+}
+ .sub-title a::after{
+    content: '';
+    width: 10px;
+    height: 3px;
+    background: navy;
+    position: absolute;
+    left: 8px;
+    bottom: -4px;
+    transition: 0.5s;
+    padding: 0;
+}
 .tab-titles{
      display: flex;
      margin: 20px 0 40px;
@@ -237,7 +257,7 @@ nav .navbar a:hover::after{
 
 #services{
     padding: 0 8%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .services-list{
@@ -288,4 +308,249 @@ nav .navbar a:hover::after{
     font-size: 16px;
 }
 
+.work-list{
+    display: block;
+    padding: 5% 5% 1% 5%;
+    margin-top: 0px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 5%;
+    display: flex;
+}
+
+.work img{
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    transition: transform .5s;
+}
+
+.layer{
+    width: 50%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), navy);
+    border-radius: 10px;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height .5s;
+    color: #fff;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: navy;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 90%;
+    cursor: pointer;
+}
+
+.info{
+    padding: 10%;
+}
+
+.info h4{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.info p{
+    line-height: 27px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.btn2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid navy;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background .5s;
+}
+
+.btn2:hover{
+    background: navy;
+    color: honeydew;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    background: #09035a;
+}
+
+
+.footer-academics{
     
+    margin: 0 150px ;
+    flex-basis: 33%;  
+}
+
+.footer-academics h2{
+    color: honeydew;
+}
+
+.footer-academics .feet{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: end;
+    width: 100%;
+    padding: 0px;
+}
+.footer-usefullinks .feet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.footer-academics a{
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ababab;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 13px;
+
+    
+}
+
+.footer-academics a:hover{
+    color: #fff;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.footer-academics h2{
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.foot{
+    background: navy;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.icons i{
+    color: #ababab;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.foot p{
+    color: #ababab;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 750px){
+    *{
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    width: 170%;
+    padding: 5% 10% 0 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .column-1 img{
+    border-radius: 10px;
+    width: 60%;
+    height: 50%;
+    margin-left: 10px;
+    
+}
+
+.hero .column-2{
+    margin-right: 300px;
+}
+
+.about{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-col-1{
+    margin-left: 0;
+}
+
+.about-col-1 img{
+    width: 60%;
+    height: 50%;
+    margin-left: 70px;
+}
+.about-col-2{
+    width: 80%;
+    margin-left: 40px;
+}
+
+.work{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+}
