@@ -499,7 +499,21 @@ nav .navbar a:hover{
     letter-spacing: 1px;
     margin-top: 20px;
 }
-
+.open-menu , .close-menu{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 6%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    right: 20px;
+}
 
 @media only screen and (max-width: 750px){
     *{
@@ -507,6 +521,46 @@ nav .navbar a:hover{
         overflow-x: hidden;
 
     }
+    nav .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+        width: 80%;
+        height: 30vh;
+    }
+
+    .open-menu , .close-menu{
+        display: block;
+        
+    }
+
+   nav .navbar{
+        display: flex;
+       
+       
+       
+    }
+    nav .navbar .logo{
+       display: flex;
+       flex-direction: column;
+
+    }
+ nav .navbar .logo h1{
+    display: block;
+    text-align: center;
+
+ }
+
+ nav .navbar .logo img{
+    height: 50%;
+    margin-top: 20px;
+ }
   .hero{
     display: flex;
     justify-content: space-between;
@@ -552,5 +606,19 @@ nav .navbar a:hover{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+}
+
+header{
+    background: url(./img/photo.png);
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    min-height: 55vh;
+    border-bottom: rgb(2, 2, 65) 10px solid;
+   
+    margin-top: 0;   
+}
+.footer{
+    flex-direction: column;
 }
 }
