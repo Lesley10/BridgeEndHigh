@@ -537,6 +537,7 @@ nav .navbar a:hover{
         transition: all 0.2s ease-in-out;
         width: 80%;
         height: 30vh;
+        margin-left: 20px;
     }
 
     .open-menu , .close-menu{
@@ -624,5 +625,37 @@ header{
 }
 .footer{
     flex-direction: column;
+}
+.icons{
+    display: flex;
+    width: 40%;
+    margin-left: 130px;
+}
+.tab-links{
+    margin-right: 0;
+    
+    text-align: left;
+    overflow: hidden;
+}
+
+
+
+.about-col-2 p{
+    overflow: hidden;
+}
+
+.hero .column-2 h1{
+    margin-left: 25px;
+}
+
+nav .navbar a{
+    overflow: hidden;
+}
+.services-list p{
+    overflow: hidden;
+}
+
+.services-list i{
+    overflow: hidden;
 }
 }
