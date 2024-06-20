@@ -6,6 +6,8 @@ body{
 
 *{
     box-sizing: border-box;
+    
+   
 }
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
@@ -23,70 +25,113 @@ header{
     background-position-y: -550px;
     margin-top: 0;
 }
-nav{
-    padding: 5px 15px 15px 15px;
-   
-    
-}
-
-.active{
-   color: white;
-
-}
-
-.logo{
-    display: flex
-    
-    
-}
-
-.contaner{
-    padding: 10px 5%;
-}
-
-.logo h1{
-    padding: 0;
-    margin: 20px 0 0 0;
-    color: #ababab;
-    font-size: 30px;
-}
-nav .navbar{
-    display: flex;
-    justify-content: space-between;
-   
-    padding: -10px 40px 40px 40px;
-    margin-right: 30px;
-
-}
-nav .navbar .nav-links .active{
-    color: #fff;
-}
-
-.nav-links{
-    margin-top: 30px;
-}
-
-nav .navbar a{
-    text-decoration: none;
-    padding: 17px 15px 15px 15px;
-    font-size: 15px;
-    position: relative;
-    font-weight: bold;
-    color:#ababab;    
-    transition: background 0.5s, transform .5s;
-}
-
-nav .navbar a:hover{
-    color: #fff; 
-    transform: translateX(10px);
-    cursor: pointer;
-    transition: .3s ease-in-out;
-}
 
 .active-link {
     color: navy;
     
 }
+nav {
+    background: transparent;
+    color: #ababab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+ nav .mainMenu .active-nav{
+    color: #fff;
+ }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+   font-weight: 600;
+    color: #ababab;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    color: #fff;
+    font-weight: bold;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons2 i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: -10px;
+    }
+    nav .openMenu {
+      display: block;
+      width: 20%;
+      margin-left: 50px;
+      margin-top: 25px;
+      margin-right: 0;
+    }
+   
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons2{
+        display: flex;
+        padding: 35px;
+    }
+    .icons2 i {
+      font-size: 25px;
+      padding: 10px 10px 10px 30px;   
+       }
+    
+  }
+  
+
 
 
 
@@ -525,47 +570,9 @@ nav .navbar a:hover{
         overflow-x: hidden;
 
     }
-    nav .navbar .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-         
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        transition: all 0.2s ease-in-out;
-        width: 80%;
-        height: 30vh;
-        margin-left: 20px;
-    }
 
-    .open-menu , .close-menu{
-        display: block;
-        
-    }
 
-   nav .navbar{
-        display: flex;
-       
-       
-       
-    }
-    nav .navbar .logo{
-       display: flex;
-       flex-direction: column;
 
-    }
- nav .navbar .logo h1{
-    display: block;
-    text-align: center;
-
- }
-
- nav .navbar .logo img{
-    height: 50%;
-    margin-top: 20px;
- }
   .hero{
     display: flex;
     justify-content: space-between;
@@ -648,9 +655,7 @@ header{
     margin-left: 25px;
 }
 
-nav .navbar a{
-    overflow: hidden;
-}
+
 .services-list p{
     overflow: hidden;
 }
