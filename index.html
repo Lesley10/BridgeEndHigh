@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge-End High School</title>
+    <title>Bridge-End High School|Home</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
@@ -20,10 +20,18 @@
             <div class="logo"><h1>Bridge End High School</h1></div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
             <ul class="mainMenu">
-                <li><a href="#" class="active-nav">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Admission</a></li>
-                <li><a href="#">Infastructures</a></li>
+                <li><a href="index.html" class="active-nav">Home</a></li>
+                <li id="menu-products">
+                    <a href="#">About</a>
+                <ul id="dropdown-products">
+                    <li><a href="unique.html">Our Uniqueness</a></li>
+                    <li><a href="">Bridge-End International School</a></li>
+                    <li><a href="">Educational Programmes</a></li>
+                    <li><a href="">Governing Board</a></li>
+                </ul>
+                </li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="infa.html">Infastructures</a></li>
                 <li><a href="#">Reviews</a></li>
                 <li><a href="#">Governing Board</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -36,7 +44,38 @@
                 </span>
             </ul>
         </nav>
-   
+    <style>
+        #menu-products{
+            position: relative;
+            display: inline-block;
+            
+            
+        }
+        #dropdown-products {
+  display: none;
+position: absolute;
+  padding: 0 0 0 0;
+  overflow: auto;
+  z-index: 1;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 200px;
+  border-radius: 15px;
+  background-color: transparent;
+ 
+}
+
+#dropdown-products li:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#menu-products:hover #dropdown-products {
+  display: block;
+  
+ 
+  
+}
+    </style>
         </header>
 
         <div class="container">
@@ -46,7 +85,14 @@
                 </div>
                 <div class="column-2">
                       <h1> Meet Our Principal</h1>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid, dolorum inventore aperiam quis illum. Laboriosam esse voluptatum beatae aliquam aut maiores odit autem itaque unde. Quasi, maxime quo consectetur necessitatibus laborum ipsam suscipit sed. Dolore, soluta exercitationem, eveniet amet itaque accusamus iusto iure nam corporis quos ab labore libero fugit dignissimos quod iste temporibus facilis tempore praesentium explicabo et obcaecati delectus! Pariatur in inventore unde quo? Fugiat blanditiis veritatis cum qui odit repudiandae, sint vel assumenda nobis deleniti magni eligendi omnis, mollitia dolore voluptatibus ullam architecto nisi? Molestias qui animi quis. Ea fuga natus aliquid veritatis delectus est deleniti.</p>
+                      <p>Welcome to Bridge-End High School
+
+                        As the Principal of Bridge-End High School, it is my pleasure to welcome you to our vibrant educational community. I am Mrs Nsor, Jennifer, and I bring over 20 years of experience in educational leadership and a deep passion for nurturing young minds. My academic journey includes a Masters in Education Administration from the University of Calabar and numerous accolades for innovative teaching practices and school administration. My commitment is to foster an environment where every student can achieve their fullest potential.
+                        
+                        Bridge-End High School, established on September 14, 2018, has grown into one of the leading secondary school institutions in Calabar and Nigeria at large, known for its academic excellence and holistic approach to education. Our school offers a rich blend of the Nigerian curriculum and looks forward to including  international programs, preparing students for global opportunities. We are proud of our diverse student body and our team of dedicated educators who are committed to guiding our students to success.
+                        
+                        What sets Bridge-End High School apart from other institutions is our unwavering commitment to excellence and innovation. Our state-of-the-art facilities, including advanced science laboratories, a virtual art studio, and modern technical drawing and home economics labs, provide students with unparalleled learning opportunities.
+                        </p>
 
                        <a href="" class="btn">See More</a>
 
@@ -58,38 +104,22 @@
                 <div class="row">
                     <div class="about">
                         <div class="about-col-1">
-                            <img src="img/photo2.png" alt="" height="600px" width="500px">
+                            <img src="img/photo2.png" alt="" height="650px" width="500px">
                         </div>
                         <div class="about-col-2">
-                            <h1 class="sub-title">About Us</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea itaque, unde laboriosam laudantium repellendus vero quo veniam harum quos facilis repellat maiores. Nulla earum reprehenderit tempore nihil eaque, ducimus quisquam at quaerat commodi fugit ipsa accusantium eius delectus deleniti in consequuntur. Dolores quidem incidunt optio provident dolorum totam cupiditate, veritatis quia quo temporibus illum delectus earum architecto, vero autem perferendis modi nobis commodi ipsa beatae quasi similique? Necessitatibus, illo. Officiis alias exercitationem quia dolorum illo ipsam ab deserunt nesciunt dolore ullam earum voluptates quisquam optio, ratione corrupti commodi temporibus pariatur maxime mollitia corporis? Sit ipsum reprehenderit aperiam iusto ea.</p>
-                               <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">FeedBack</p>
-                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                                <p class="tab-links" onclick="opentab('education')">Education</p>
-                               </div>
-        
-                               <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                </ul>
-                               </div>
-                               <div class="tab-contents" id="experience">
-                                <ul>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                </ul>
-                               </div>
-                               <div class="tab-contents" id="education">
-                                <ul>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                    <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                </ul>
-                               </div>
+                            <h1 class="sub-title2">About Us</h1>
+                            <p><h2>Conducive Learning Environment</h2> <br>
+
+                                At Bridge-End High School, we prioritize creating a learning environment that stimulates intellectual curiosity and academic achievement. Our state-of-the-art classrooms are equipped with the latest educational technology, providing students with the tools they need to engage deeply with their studies. Our dedicated faculty members are passionate about teaching and are committed to personalized instruction, ensuring that each student receives the attention and support they need to succeed. <br><br><a href="">Read More</a>
+                                
+                              <h2>  Encouraging Social Interactions</h2>
+                                
+                                We believe that social development is as crucial as academic growth. Bridge-End High School offers numerous opportunities for students to interact and collaborate, both inside and outside the classroom. Our extracurricular programs, ranging from sports teams to arts clubs, provide platforms for students to explore their interests, develop teamwork skills, and form lasting friendships. <br><br><a href="">Read More</a>
+                                
+                              <h2>  Developing the Learner's Mind</h2>
+                                
+                                The holistic development of our students' minds is a core principle at Bridge-End High School. Beyond academic and social skills, we emphasize critical thinking, creativity, and emotional intelligence. Our curriculum includes a variety of enrichment programs, such as debate clubs, science fairs, and creative writing workshops, that encourage students to think critically and express themselves creatively. We also offer mindfulness and wellness programs to help students manage stress and build emotional resilience. <br><br> <a href="">Read More</a></p>
+                               
         
         
                         </div>
@@ -104,23 +134,32 @@
                   <div>
                     <i class='bx bxs-graduation' ></i></i>
                     <h2>Educational Programmes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus dolorum eaque sint eius aut animi quaerat, nobis deserunt error!</p>
-                      <a href="">Learn More </a>
+                    <p id="demo">Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria
+
+                        Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. 
+                        </p>
+                      <a onclick="see()" id="learn">See More</a> <br>
+                      <a onclick="hide()" id="hide" style="display: none;">See Less </a> 
         
                   </div>
                   <div>
                     <i class="fa-solid fa-flask"></i>
                     <h2>Laboratories</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus dolorum eaque sint eius aut animi quaerat, nobis deserunt error!</p>
-                      <a href="">Learn More</a>
+                    <p id="demo2">
+                        Bridge-End High School’s laboratories are designed to provide students with a rich, hands-on learning experience that meets international standards. Each laboratory is equipped with advanced tools and resources, ensuring that students gain practical skills and knowledge in their respective fields. </p>
+                        <a onclick="see2()" id="learn2">See More </a> <br>
+                        <a href="infa.html" class="btn3" style="display: none;" id="btn3">Learn More</a>
+                    
         
                   </div>
                   <div>
                     <i class='bx bxs-universal-access'></i>
                     <h2>Bridge-End Internatonal School</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus dolorum eaque sint eius aut animi quaerat, nobis deserunt error!</p>
-                      <a href="">Learn More</a>
-        
+                    <a onclick="see3()" id="learn3">See More </a> <br>
+                    <a onclick="hide2()" id="hide2" style="display: none;">See Less </a> 
+                    
+                      
                   </div>
                </div>
             </div>
@@ -129,7 +168,7 @@
         <div id="portfolio">
             <div class="container">
              <h1 class="sub-title">
-                 Our Facilities
+                 Our Uniqueness
              </h1>
          
              <div class="work-list">
@@ -137,38 +176,31 @@
                      <img src="./img/tech.png">
                     
                      <div class="info">
-                        <h4>Physics Laboratory</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quo in excepturi optio nam similique asperiores cumque repellendus debitis sed?</p>
+                        <h4>Tech Pioneers At Brainstorming Desk</h4>
+                        <p> <a href="unique.html" class="btn2">See More</a></p>
                      </div>
                  </div>
                  <div class="work">
                      <img src="./img/obas.png">
                      
                      <div class="info">
-                        <h4>Chemistry Laboratory</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quo in excepturi optio nam similique asperiores cumque repellendus debitis sed?</p>
+                        <h4>Project Collaborations</h4>
+                        <p> <a href="unique.html" class="btn2">See More</a></p>
                      </div>
                  </div>
                  <div class="work">
                      <img src="./img/succles.png">
                      
                      <div class="info">
-                        <h4>Biology Laboratory</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quo in excepturi optio nam similique asperiores cumque repellendus debitis sed?</p>
+                        <h4>Cultivating Boldness and Expression Through Presentations</h4>
+                        <p> <a href="unique.html" class="btn2">See More</a></p>
                      </div>
                  </div>
-                 <div class="work">
-                     <img src="./img/front.jpg">
-                    
-                     <div class="info">
-                        <h4>Tuck Shop</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quo in excepturi optio nam similique asperiores cumque repellendus debitis sed?</p>
-                     </div>
-                 </div>
+               
              </div>
          
          
-             <a href="" class="btn2">See More</a>
+            
             </div>
          </div>
 
@@ -230,5 +262,6 @@
                 document.getElementById(tabname).classList.add("active-tab")
             }
         </script>        
+        <script src="main.js"></script>
 </body>
 </html>
