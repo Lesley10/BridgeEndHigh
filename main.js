@@ -18,12 +18,16 @@ function hide(){
 
 }
 function hide2(){
+	document.getElementById('demo3').innerHTML = 'Welcome to Bridge-End International School, Where Every Childs Journey Begins......'
     document.getElementById('hide2').style.display = 'none';
 	document.getElementById('learn3').style.display = 'block';
+	
 
 }
 function see3(){
+	document.getElementById('demo3').innerHTML = 'Bridge-End International School is excited to announce the opening of our new nursery and primary school in Calabar! At Bridge-End International School, we are dedicated to providing a nurturing and stimulating environment where every childs educational journey begins with joy and excitement. <a href="bis.html" class="btn3" style="display: none;" id="btn4">Learn More</a>';
 	document.getElementById('hide2').style.display = 'block';
 	document.getElementById('learn3').style.display = 'none';
+	document.getElementById('btn4').style.display = 'block';
 	}
 
