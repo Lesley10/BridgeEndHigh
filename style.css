@@ -632,7 +632,16 @@ nav {
 }
 
 .hero .column-2{
-    margin-right: 300px;
+    width: 50%;
+    margin: 0 300px 0 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+
+.hero .column-2 p{
+    width: 92%;
 }
 
 .about{
