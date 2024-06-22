@@ -392,10 +392,11 @@ nav {
 
 .work img{
     width: 50%;
-    height: 50%;
+    height: 10%;
     border-radius: 10px;
     display: block;
     transition: transform .5s;
+
 }
 
 .layer{
@@ -446,7 +447,7 @@ nav {
 }
 
 .info{
-    padding: 10%;
+    padding: 0% 10% 10% 10%;
 }
 
 .info h4{
