@@ -22,18 +22,19 @@
             <ul class="mainMenu">
                 <li><a href="index.html" class="active-nav">Home</a></li>
                 <li id="menu-products">
-                    <a href="#">About</a>
+                 <a href="">  About <i class='bx bxs-chevron-right ico'></i></a>
                 <ul id="dropdown-products">
                     <li><a href="unique.html">Our Uniqueness</a></li>
                     <li><a href="bis.html">Bridge-End International School</a></li>
                     <li><a href="">Educational Programmes</a></li>
-                    <li><a href="">Governing Board</a></li>
+                
                 </ul>
                 </li>
                 <li><a href="admission.html">Admission</a></li>
                 <li><a href="infa.html">Infastructures</a></li>
+                
                 <li><a href="#">Reviews</a></li>
-               
+                <li><a href="GoverningBoard.html">Governing Board</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
                 <span class="icons2">
@@ -62,7 +63,7 @@ position: absolute;
   min-width: 200px;
   border-radius: 15px;
   background-color: transparent;
- 
+ transition:  transform .5s ease-in-out;
 }
 
 #dropdown-products li:hover{
@@ -71,9 +72,33 @@ position: absolute;
 
 #menu-products:hover #dropdown-products {
   display: block;
+  transform: scale(0.999999999999999999999999999999999999);
   
  
   
+}
+.ico{
+    display: inline;
+       
+    
+}
+
+@media (max-width: 800px) {
+    #menu-products{
+        display: flex;
+        height: 350px;
+       display: block;
+       overflow: hidden;
+       
+    }
+    #dropdown-products{
+        display: block;
+        height: 300px;
+        overflow: hidden;
+    }
+   
+
+
 }
     </style>
         </header>
