@@ -614,9 +614,13 @@ nav {
     *{
         width: 100%;
         overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0;
 
     }
-
+ body{
+    overflow: hidden;
+ }
 
 
   .hero{
@@ -670,11 +674,11 @@ header{
     background: url(./img/bis.png);
     background-position: center;
     background-repeat: no-repeat;  
-    background-size: 100%;
-    min-height: 55vh;
+    background-size: 155%;
+    min-height: 50vh;
     border-bottom: rgb(2, 2, 65) 10px solid;
-   
-    margin-top: 0;   
+   overflow: hidden;
+    margin-top: 0px;   
 }
 .footer{
     flex-direction: column;
