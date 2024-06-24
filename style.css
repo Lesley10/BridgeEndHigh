@@ -118,7 +118,8 @@ nav {
    
     nav .mainMenu li a:hover {
       background: none;
-      color: rgb(255, 123, 0);
+      color: #fff;
+      
     }
     .icons2{
         display: flex;
@@ -128,7 +129,7 @@ nav {
       font-size: 25px;
       padding: 10px 10px 10px 30px;   
        }
-    
+      
   }
   
 
