@@ -241,6 +241,8 @@ transition: 0.3s ease;
 #herocontainer button:hover{
   background: navy;
   color: white;
+  border: 1px solid #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.304);
 }
 
 #footer{
@@ -253,6 +255,7 @@ transition: 0.3s ease;
 
 .Academics li{
   padding-bottom: 15px;
+  color: gray;
 }
 
 .Academics h4{
@@ -278,6 +281,7 @@ transition: 0.3s ease;
 
 .Useful-Links ul{
   list-style: none;
+  color: gray;
 }
 
 .Useful-Links li:hover{
@@ -287,6 +291,15 @@ transition: 0.3s ease;
 
 .Useful-Links li{
   padding-bottom: 15px;
+}
+
+.footer-icon ul{
+  list-style: none;
+}
+
+.footer-icon i{
+  color: #fff;
+  padding-bottom: 5px;
 }
 
 
