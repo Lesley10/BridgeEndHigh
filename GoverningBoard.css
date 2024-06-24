@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: .2s;
+}
+
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 1px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: .2s;
+}
+
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #e3e6e3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header h2{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar ul{
+  display: flex;
+  /* padding-right: 15px; */
+
+}
+
+.dropbtn {
+  background-color: #e3e6e3;
+  color: #000;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e3e6e3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #e3e6e3;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #e3e6e3;}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a{
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: #1a1a1a;
+transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+   color: navy;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: navy;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile{
+  display: none;
+  align-items: center;
+}
+
+#close{
+  display: none;
+}
+
+
+#herosection{
+  text-align: center;
+  padding-top: 80px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.imgholder{
+  border: 1px solid #e3e6e3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#herosection img{
+  width:400px;
+  /* height:750px; */
+  border: 1px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  transition: .5s ease-in-out;
+}
+
+#herosection img:hover{
+  transform: scale(1.1);
+}
+
+#herocontainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  padding-top: 100px;
+}
+
+#herocontainer h3{
+  padding-bottom: 20px;
+}
+
+#herocontainer button{
+  border: 1px solid black;
+}
+
+#herocontainer button:hover{
+  background: navy;
+  color: white;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: navy;
+  padding: 10px 25px 10px 25px;
+}
+
+.Academics li{
+  padding-bottom: 15px;
+}
+
+.Academics h4{
+  padding-bottom: 20px;
+}
+
+.Academics ul{
+  list-style: none;
+}
+
+.Academics li:hover{
+  color: burlywood;
+  cursor: pointer;
+}
+
+.Useful-Links li{
+  padding-bottom: 15px;
+}
+
+.Useful-Links h4{
+  padding-bottom: 20px;
+}
+
+.Useful-Links ul{
+  list-style: none;
+}
+
+.Useful-Links li:hover{
+  color: burlywood;
+  cursor: pointer;
+}
+
+.Useful-Links li{
+  padding-bottom: 15px;
+}
+
+
+
+@media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+}
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgb(0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: .3s;
+  }
+  #navbar.active{
+    right: 0px;
+  }
+  #navbar ul{
+    display: grid;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+  }
+  #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+}
+
+/* small devices */
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+}
+  #header {
+    padding: 10px 30px;
+}
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 32px;
+}
+.imgholder {
+  width: 300px;
+}
+#herocontainer h3 {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+#herosection img {
+  width: 300px;
+  padding-bottom: 15px;
+}
+#herocontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+#herocontainer h3 {
+  padding-bottom: 40px;
+}
+#footer {
+  padding: 10px;
+  padding-right: 15px;
+  text-align: center;
+}
+}
