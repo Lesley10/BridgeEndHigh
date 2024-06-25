@@ -59,62 +59,124 @@
 
         <section class="container-form">
           <div class="container">
-            <header>Admission Form</header>
-            <form action="#" class="form">
-              <div class="input-box">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter full name" required />
-              </div>
-              <div class="input-box">
-                <label> Email Address</label>
-                <input type="email" placeholder="Enter  email address" required />
-              </div>
-              <div class="column">
-                <div class="input-box">
-                  <label>Phone Number</label>
-                  <input type="number" placeholder="Enter phone number" required />
-                </div>
-                <div class="input-box">
-                  <label>Birth Date</label>
-                  <input type="date" placeholder="Enter birth date" required />
-                </div>
-              </div>
-              <div class="gender-box">
-                <h3>Gender</h3>
-                <div class="gender-option">
-                  <div class="gender">
-                    <input type="radio" id="check-male" name="gender" checked />
-                    <label for="check-male">male</label>
-                  </div>
-                  <div class="gender">
-                    <input type="radio" id="check-female" name="gender" />
-                    <label for="check-female">Female</label>
-                  </div>
-                </div>
-              </div>
-              <div class="input-box address">
-                <label>Address</label>
-                <input type="text" placeholder="Enter street address" required />
-                <input type="text" placeholder="Enter street address line 2" required />
-                <div class="column">
-                  <div class="select-box">
-                    <select>
-                      <option hidden>Country</option>
-                      <option>America</option>
-                      <option>Japan</option>
-                      <option>India</option>
-                      <option>Nepal</option>
-                    </select>
-                  </div>
-                  <input type="text" placeholder="Enter your city" required />
-                </div>
-                <div class="column">
-                  <input type="text" placeholder="Enter your region" required />
-                  <input type="number" placeholder="Enter postal code" required />
-                </div>
-              </div>
-              <button>Submit</button>
-            </form>
+       <header>Admission Form</header>
+    <form method="post" action="#rake.red#">
+    <div class="form first">
+      <div class="details personal">
+        <span class="title">Personal Details</span>
+        <div class="fields">
+          <div class="field1">
+            <div class="input-field">
+              <label>Surname  <i class='bx bxs-user'></i></label>
+              <input type="text" name="surname" placeholder="Surname" required>
+            </div>
+            <div class="input-field">
+              <label>Other Names  <i class='bx bxs-user'></i></label>
+              <input type="text" name="othernames" placeholder="Other Names" required>
+            </div>
+          </div>
+          <div class="field2">
+          <div class="input-field">
+            <label>Gender  <i class='bx bx-male-female' ></i></label>
+            <select required>
+              <option hidden disabled selected>Select gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label>Place Of Birth  <i class='bx bxs-cake'></i></label>
+            <input type="date" name="placeofbirth" placeholder="Place Of Birth" required>
+          </div>
+          <div class="input-field">
+            <label>Religion  <i class='bx bx-church' ></i></label>
+            <select required>
+              <option hidden disabled selected>Select Religion</option>
+              <option><i class='bx bx-flag' ></i>Christian</option>
+              <option><i class='bx bx-flag' ></i>Muslim</option>
+              <option><i class='bx bx-flag' ></i>Buddhist</option>
+              <option><i class='bx bx-flag' ></i>Atheist</option>
+            </select>
+          </div>
+          </div>
+          <div class="field3">
+          <div class="input-field">
+            <label>Nationality  <i class='bx bxs-flag' ></i></label>
+            <select required>
+              <option hidden disabled selected>Select Country</option>
+              <option><i class='bx bxs-flag' ></i>Mercury</option>
+              <option><i class='bx bxs-flag' ></i>Venus</option>
+              <option><i class='bx bxs-flag' ></i>Earth</option>
+              <option><i class='bx bxs-flag' ></i>Mars</option>
+              <option><i class='bx bxs-flag' ></i>Jupiter</option>
+              <option><i class='bx bxs-flag' ></i>Saturn</option>
+              <option><i class='bx bxs-flag' ></i>Uranus</option>
+              <option><i class='bx bxs-flag' ></i>Neptune</option>
+              <option><i class='bx bxs-flag' ></i>Pluto</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label>State Of Origin  <i class='bx bxs-flag' ></i></label>
+            <input type="text" name="stateoforigin" placeholder="State Of Origin" required>
+          </div>
+          </div>
+          <div class="field4">
+          <div class="input-field">
+            <label>Residential Address  <i class='bx bxs-building-house' ></i></label>
+            <input type="text" name="address" placeholder="Residential Address" required>
+          </div>
+          </div>
+          <div class="field5">
+          <div class="input-field">
+            <label>Last School Attended  <i class='bx bxs-school' ></i></label>
+            <input type="text" name="lastschool" placeholder="School Name" required>
+          </div>
+          <div class="input-field">
+            <label>Last Class Attained in the School  <i class='bx bxs-school' ></i></label>
+            <select required>
+              <option hidden disabled selected>Select Class</option>
+              <option>JSS1</option>
+              <option>JSS2</option>
+              <option>JSS3</option>
+              <option>SSS1</option>
+              <option>SSS2</option>
+              <option>SSS3</option>
+            </select>
+          </div>
+          </div>
+          <div class="field6">
+          <div class="input-field">
+            <label>Admission Class  <i class='bx bxs-school' ></i></label>
+            <select required>
+              <option hidden disabled selected>Select Class</option>
+              <option>JSS1</option>
+              <option>JSS2</option>
+              <option>JSS3</option>
+              <option>SSS1</option>
+              <option>SSS2</option>
+              <option>SSS3</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label>Student's Hobbies  <i class='bx bxs-ball'></i>  </label>
+            <input type="text" name="hobbies" placeholder="Hobbies" required>
+          </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button type="next" class="submit">
+            <span class="btnText">Next</span>
+            <i class="uil uil-navigator"></i>
+          </button>
+          <button type="submit" class="submit">
+            <span class="btnText">Submit</span>
+            <i class="bx bxs-navigator"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    </form>
           </div>
            
           </section>
