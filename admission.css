@@ -290,42 +290,42 @@ form .fields .input-field{
 }
 form .fields .field1{
     display: flex;
-    width: calc(186% / 2 - 15px);
+    width: calc(200% / 2 - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
 }
 form .fields .field2{
     display: flex;
-    width: calc(279% / 3 - 15px);
+    width: calc(300% / 3 - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
 }
 form .fields .field3{
     display: flex;
-    width: calc(186% / 2 - 15px);
+    width: calc(200% / 2 - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
 }
 form .fields .field4{
     display: flex;
-    width: clac(100% - 30px);
+    width: clac(100% - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
 }
 form .fields .field5{
     display: flex;
-    width: calc(186% / 2 - 15px);
+    width: calc(200% / 2 - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
 }
 form .fields .field6{
     display: flex;
-    width: calc(186% / 2 - 15px);
+    width: calc(200% / 2 - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
