@@ -6,7 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -312,7 +311,7 @@ form .fields .field3{
 }
 form .fields .field4{
     display: flex;
-    width: clac(100%-15px);
+    width: clac(100% - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
