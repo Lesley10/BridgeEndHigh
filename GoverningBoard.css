@@ -248,7 +248,7 @@ transition: 0.3s ease;
 #footer{
   display: flex;
   align-items: center;
-  justify-content: spce-between;
+  justify-content: space-between;
   background: navy;
   padding: 10px 25px 10px 25px;
 }
