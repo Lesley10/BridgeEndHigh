@@ -300,6 +300,7 @@ transition: 0.3s ease;
 .footer-icon i{
   color: #fff;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 
 
