@@ -290,7 +290,7 @@ form .fields .input-field{
 }
 form .fields .field1{
     display: flex;
-    width: calc(200% / 2 - 15px);
+    width: calc(196% / 2 - 15px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
