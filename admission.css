@@ -311,7 +311,7 @@ form .fields .field3{
 }
 form .fields .field4{
     display: flex;
-    width: clac(100% - 15px);
+    width: clac(100% - 30px);
     flex-direction: row;
     column-gap: 15px;
     margin: 4px 0;
