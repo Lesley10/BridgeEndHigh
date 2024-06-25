@@ -253,7 +253,7 @@ transition: 0.3s ease;
   padding: 10px 25px 10px 25px;
 }
 
-.Academics li{
+.Academics li i{
   padding-bottom: 15px;
   color: gray;
 }
