@@ -253,7 +253,7 @@ transition: 0.3s ease;
   padding: 10px 25px 10px 25px;
 }
 
-.Academics li i{
+.Academics li{
   padding-bottom: 15px;
   color: gray;
 }
@@ -300,6 +300,11 @@ transition: 0.3s ease;
 .footer-icon i{
   color: #fff;
   padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-icon li i{
+  padding-bottom: 15px;
   cursor: pointer;
 }
 
