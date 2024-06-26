@@ -37,6 +37,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
   }
  nav .mainMenu .active-nav{
     color: #fff;
@@ -610,6 +611,7 @@ nav {
     *{
         width: 100%;
         overflow-x: hidden;
+        overflow-y: auto;
 
     }
 
@@ -626,14 +628,14 @@ nav {
   }
   .hero .column-1 img{
     border-radius: 10px;
-    width: 60%;
+    width: 50%;
     height: 50%;
     margin-left: 10px;
     
 }
 
 .hero .column-2{
-    width: 50%;
+    width: 60%;
     margin: 0 300px 0 0;
     padding: 0;
     overflow: hidden;
@@ -687,7 +689,7 @@ header{
 .icons{
     display: flex;
     width: 40%;
-    margin-left: 130px;
+    margin-left: 110px;
 }
 .tab-links{
     margin-right: 0;
