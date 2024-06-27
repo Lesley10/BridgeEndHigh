@@ -34,7 +34,7 @@ nav {
   }
   nav .mainMenu li a {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
    font-weight: 600;
     color: #ababab;
@@ -70,7 +70,7 @@ nav {
     color: rgb(255, 123, 0);
   }
   nav .logo {
-    margin: 6px;
+    margin: 6px 6px 6px 103px;
     cursor: pointer;
     text-transform: uppercase;
   }
@@ -586,6 +586,17 @@ nav {
         overflow-x: hidden;
 
     }
+.sub-title3{
+    margin-left: 0;
+    text-align: center;
+    
+}
+nav .logo{
+    margin-left: 20px;
+}
+.infa{
+    margin-left: 50px;
+}
 
 
 
