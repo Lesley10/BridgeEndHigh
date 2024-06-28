@@ -220,10 +220,11 @@ transition: 0.3s ease;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
 }
 
 #principal-speech div {
-  width: 340px;
+  width: 50%;
 }
 
 #principal-speech img{
@@ -232,7 +233,11 @@ transition: 0.3s ease;
   border: 1px solid #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.103);
   border-radius: 8px;
-  padding-right: 0px;
+  padding-right: 0;
+}
+
+#principal-speech span{
+  width: 50%;
 }
 
 #about{
