@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 /* Global Styles */
@@ -423,25 +424,6 @@ form .buttons button , .backBtn{
 }
 
 @media (max-width: 550px) {
-  .container form{
-      overflow-y: scroll;
-  }
-  .container form::-webkit-scrollbar{
-     display: none;
-  }
-  form .fields .input-field{
-      width: calc(100% / 2 - 15px);
-  }
-}
-
-@media (max-width: 550px) {
-  form .fields .input-field{
-      width: 100%;
-  }
-}
-
-
-@media (max-width: 768px) {
 .section-p1 {
   padding: 40px 40px;
 }
@@ -491,7 +473,7 @@ form .buttons button , .backBtn{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0 15px;
   background: gainsboro;
 
 }
@@ -503,12 +485,13 @@ form .buttons button , .backBtn{
   align-self: center;
   border-radius: 10px;
   padding: 30px 20px;
-  margin: 25px 0 50px 0;
+  margin: 40px 0 65px 0;
   background-color: navy;
   box-shadow: 0 2px 30px 5px rgba(0, 0, 0.06);
 }
 .container header{
   position: relative;
+  width: max-content;
   font-size: 20px;
   font-weight: 600;
   color: white;
@@ -532,6 +515,7 @@ form .buttons button , .backBtn{
 }
 .container form .form{
   position: absolute;
+  width: 100%;
   background-color: navy;
   transition: 0.3s ease;
 }
@@ -555,6 +539,7 @@ form.secActive .form.first{
   font-size: 16px;
   font-weight: 500;
   font-family: cursive;
+  width: fit-content;
   margin: 0 0 5px 0;
   color: white;
 }
@@ -573,48 +558,48 @@ form .fields .input-field{
 }
 form .fields .field1{
   display: flex;
-  width: calc(92.3% / 2 - 15px);
+  width: calc(108.4% / 2 - 15px);
   flex-direction: row;
   column-gap: 5px;
   margin: 2px 0;
 }
 form .fields .field2{
   display: flex;
-  width: calc(95.2% / 3 - 15px);
+  width: calc(111.6% / 3 - 15px);
   flex-direction: row;
   column-gap: 5px;
   margin: 2px 0;
 }
 form .fields .field3{
   display: flex;
-  width: calc(178.8% / 2 - 15px);
+  width: calc(210.2% / 2 - 15px);
   flex-direction: row;
   column-gap: 5px;
   margin: 2px 0;
 }
 form .fields .field4{
   display: flex;
-  width: calc(178.8% / 2 - 15px);
+  width: calc(210.2% / 2 - 15px);
   flex-direction: row;
   column-gap: 5px;
   margin: 2px 0;
 }
 form .fields .field5{
   display: flex;
-  width: calc(91.4% - 15px);
+  width: calc(105.1% - 15px);
   flex-direction: row;
   margin: 2px 0;
 }
 form .fields .field6{
   display: flex;
-  width: calc(102.6% / 2 - 15px);
+  width: calc(210.6% / 2 - 15px);
   flex-direction: row;
   column-gap: 5px;
   margin: 2px 0;
 }
 form .fields .field7{
   display: flex;
-  width: calc(94.4% / 2 - 15px);
+  width: calc(108.6% / 2 - 15px);
   flex-direction: row;
   column-gap: 5px;
   margin: 2px 0;
@@ -713,5 +698,6 @@ font-size: 38px;
 }
 h2 {
 font-size: 32px;
+width: fit-content;
 }
 }
