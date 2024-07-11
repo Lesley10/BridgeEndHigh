@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governing Body Page</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+<section id="header">
+    <h2>Bridge End High School</h2>
+
+    <div id="navbar">
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                    <div class="dropdown">
+                        <p class="dropbtn">About</p>
+                        <div class="dropdown-content">
+                          <a href="">Brigde-end International School</a>
+                          <a href="#">Educational programs</a>
+                          <a href="gb.html" class="active">Governing Board</a>
+                        </div>
+                      </div>
+            </li>
+            <li>
+                <a href="admission.html">Admission</a>
+            </li>
+            <li>
+                <a href="infra.html">Infrastructures</a>
+            </li>
+            <li>
+                <a href="#">Reviews</a>
+            </li>
+            
+        
+            <li>
+                <a href="#">Contact us</a>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+    
+</section>
+
+<section id="herosection"> 
+
+    <h1>MEET THE GOVERNING BOARD</h1>
+
+  <div id="herocontainer">
+        <div class="imgholder">
+            <img src="./img/director.jpg"
+            width="400px"
+            >
+        </div>
+        
+        <div class="herotext">
+            <h3>MEET THE CHAIRMAN</h3>
+            <button class="normal">LEARN MORE <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+   </div>
+  <div id="herocontainer">
+        <div class="imgholder">
+            <img src="./img/director.jpg"
+            width="400px"
+            >
+        </div>
+        
+        <div class="herotext">
+            <h3>MEET THE DIRECTOR</h3>
+            <button class="normal">LEARN MORE</button>
+        </div>
+   </div>
+  <div id="herocontainer">
+        <div class="imgholder">
+            <img src="./img/director.jpg"
+            width="400px"
+            >
+        </div>
+        
+        <div class="herotext">
+            <h3>MEET THE PRINCIPAL</h3>
+            <button class="normal">LEARN MORE</button>
+        </div>
+   </div>
+   </div>
+</section>
+
+<section id="footer">
+<div class="Academics">
+    <h4>Academics</h4>
+    <ul>
+        <li>Our Academics</li>
+        <li>Mission Statement</li>
+        <li>Principals Welcome</li>
+    </ul>
+</div>
+
+<div class="Useful-Links">
+<h4>Useful Links</h4>
+<ul> 
+    <li>About Us</li>
+    <li>Extra Curricular</li>
+    <li>Gallery</li>
+</ul>
+</div>
+<div class="footer-icon">
+    <ul>
+        <li>
+            <i class="fab fa-instagram"></i>
+        </li>
+        <li>
+            <i class="fab fa-facebook"></i>
+        </li>
+        <li>
+            <i class="fab fa-twitter"></i>
+        </li>
+    </ul>
+</div>
+</section>
+
+<script>
+    const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
+
+if (bar) {
+bar.addEventListener('click' , () => {
+    nav.classList.add('active')
+})
+}
+
+if (close) {
+close.addEventListener('click' , () => {
+    nav.classList.remove('active')
+})
+}
+</script>
+</body>
+</html>

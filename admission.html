@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHS Admission</title>
+  <link rel="stylesheet" href="./admission.css">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+  <section id="header">
+    <h2>Bridge End High School</h2>
+    <div id="navbar">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <p class="dropbtn">About</p>
+            <div class="dropdown-content">
+              <a href="./BIS.html">Brigde-end International School</a>
+              <a href="#">Educational programs</a>
+              <a href="./gb.html" >Governing Board</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="admission.html" class="active">Admission</a></li>
+        <li><a href="infra.html">Infrastructures</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact us</a></li>
+            <a href="#" id="close"><i class='bx bx-x'></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <section class="container-form">
+    <div class="container">
+    <header>Admission Form</header>
+      <form method="post" action="https://rake.red/api/bhsweb/admission">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details  <i class='fas fa-id-card'></i></span>
+            <div class="fields">
+
+              <div class="field1">
+                <div class="input-field">
+                  <label>Surname  <i class='fas fa-user'></i></label>
+                  <input type="text" name="Surname" placeholder="Enter Surname" required />
+                </div>
+                <div class="input-field">
+                  <label>Other Names  <i class='fas fa-user'></i></label>
+                  <input type="text" name="OtherNames" placeholder="Enter Other Names" required />
+                </div>
+              </div>
+
+              <div class="field2">
+              <div class="input-field">
+                <label>Gender  <i class='bx bx-male-female'></i></label>
+                <select name="Gender" required />
+                  <option hidden disabled selected>Select Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Place Of Birth  <i class='fas fa-flag'></i></label>
+                <select name="PlaceOfBirth" required />
+                  <option hidden disabled selected>Select Country</option>
+                  <option>Mercury</option>
+                  <option>Venus</option>
+                  <option>Earth</option>
+                  <option>Mars</option>
+                  <option>Jupiter</option>
+                  <option>Saturn</option>
+                  <option>Uranus</option>
+                  <option>Neptune</option>
+                  <option>Pluto</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Religion  <i class='fas fa-church'></i> <i class='fas fa-mosque'></i></label>
+                <select name="Religion" required />
+                  <option hidden disabled selected>Select Religion</option>
+                  <option>Christian</option>
+                  <option>Muslim</option>
+                  <option>Buddhist</option>
+                  <option>Atheist</option>
+                </select>
+              </div>
+              </div>
+
+              <div class="field3">
+              <div class="input-field">
+                <label>Nationality  <i class='fas fa-flag'></i></label>
+                <select name="Nationality" required />
+                  <option hidden disabled selected>Select Country</option>
+                  <option>Mercury</option>
+                  <option>Venus</option>
+                  <option>Earth</option>
+                  <option>Mars</option>
+                  <option>Jupiter</option>
+                  <option>Saturn</option>
+                  <option>Uranus</option>
+                  <option>Neptune</option>
+                  <option>Pluto</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>State Of Origin  <i class='fas fa-flag' ></i></label>
+                <input type="text" name="StateOfOrigin" placeholder="Enter State" required />
+              </div>
+              </div>
+
+              <div class="field4">
+              <div class="input-field">
+                <label>Residential Address  <i class='fas fa-house' ></i></label>
+                <input type="text" name="ResidentialAddress" placeholder="Enter Address" required />
+              </div>
+              </div>
+
+              <div class="field3">
+              <div class="input-field">
+                <label>Last School Attended  <i class='fas fa-school' ></i></label>
+                <input type="text" name="LastSchoolAttended" placeholder="Enter School Name" required />
+              </div>
+              <div class="input-field">
+                <label>Last Class Attained  <i class='fas fa-school' ></i></label>
+                <select name="LastClassAttained" required />
+                  <option hidden disabled selected>Select Class</option>
+                  <option>JSS1</option>
+                  <option>JSS2</option>
+                  <option>JSS3</option>
+                  <option>SSS1</option>
+                  <option>SSS2</option>
+                  <option>SSS3</option>
+                </select>
+              </div>
+              </div>
+
+              <div class="field3">
+              <div class="input-field">
+                <label>Admission Class  <i class='fas fa-school' ></i></label>
+                <select name="AdmissionClass" required />
+                  <option hidden disabled selected>Select Class</option>
+                  <option>JSS1</option>
+                  <option>JSS2</option>
+                  <option>JSS3</option>
+                  <option>SSS1</option>
+                  <option>SSS2</option>
+                  <option>SSS3</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Student's Hobbies  <i class='fas fa-basketball'></i>  </label>
+                <input type="text" name="StudentsHobbies" placeholder="Enter Hobbies" required />
+              </div>
+              </div>
+            </div>
+
+            <div class="buttons">
+            <button class="nextBtn">
+              <span class="btnText">Next</span>
+              <i class="bx bxs-chevrons-right"></i>
+            </button>
+            </div>
+          </div> 
+        </div>
+
+        <div class="form second">
+          <div class="details parents">
+            <span class="title">Parents' Details</span>
+            <div class="fields">
+
+              <div class="field5">
+                <div class="input-field">
+                  <label>Father's Name  <i class='bx bxs-user' ></i></label>
+                  <input type="text" name="FathersName" placeholder="Enter Father's Name" required />
+                </div>
+              </div>
+
+              <div class="field5">
+                <div class="input-field">
+                  <label>Father's Residential Address  <i class='bx bxs-building-house' ></i></label>
+                  <input type="text" name="FathersResAddress" placeholder="Enter Address" required />
+                </div>
+              </div>
+
+              <div class="field6">
+                <div class="input-field">
+                  <label>Father's Private Phone  <i class='bx bxs-phone' ></i></label>
+                  <input type="number" name="FathersPrivPhone" placeholder="Enter Phone" required />
+                </div>
+                <div class="input-field">
+                  <label>Father's Occupation  <i class='bx bxs-briefcase' ></i></label>
+                  <select name="FathersOccupation" required />
+                    <option hidden disabled selected>Select Occupation</option>
+                    <option>Doctor</option>
+                    <option>Engineer</option>
+                    <option>Professor</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field5">
+                <div class="input-field">
+                  <label>Father's Office Address  <i class='bx bxs-building-house' ></i></label>
+                  <input type="text" name="FathersOffiAddress" placeholder="Enter Address" required />
+                </div>
+              </div>
+
+              <div class="field7">
+                <div class="input-field">
+                  <label>Father's Office Phone  <i class='bx bxs-phone' ></i></label>
+                  <input type="number" name="FathersOffiPhone" placeholder="Enter Phone" required />
+                </div>
+                <div class="input-field">
+                  <label>Father's Email  <i class='bx bxs-envelope' ></i></label>
+                  <input type="email" name="FathersEmail" placeholder="Enter Email" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons">
+            <div class="backBtn">
+              <i class="bx bxs-chevrons-right"></i>
+              <span class="btnText">Back</span>
+            </div>
+            
+            <button type="submit" class="submit">
+              <span class="btnText">Submit</span>
+              <i class='bx bxs-send'></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="admi.js"></script>
+  <script>
+    const bar = document.getElementById('bar');
+    const close = document.getElementById('close');
+    const nav = document.getElementById('navbar');
+
+    if (bar) {
+      bar.addEventListener('click' , () => {
+        nav.classList.add('active')
+      })
+    }
+
+    if (close) {
+      close.addEventListener('click' , () => {
+        nav.classList.remove('active')
+      })
+    }
+  </script>
+</body>
+</html>
