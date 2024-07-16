@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHS | Admission</title>
+    <link rel="stylesheet" href="./admission.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="script" href="index.js">
+  </head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><h1>Bridge End High School</h1></div>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="index.html">Home</a></li>
+          <li id="menu-products">
+            <a href="#">About</a>
+            <ul id="dropdown-products">
+            <li><a href="unique.html">Our Uniqueness</a></li>
+            <li><a href="">Bridge-End International School</a></li>
+            <li><a href="">Governing Board</a></li>
+            </ul>
+          </li>
+          <li><a href="admission.html"  class="active-nav">Admission</a></li>
+          <li><a href="infa.html">Infastructures</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Governing Board</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons2">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </span>
+        </ul>
+    </nav>
+  <style>
+    #menu-products{
+      position: relative;
+      display: inline-block;  
+    }
+    #dropdown-products {
+      display: none;
+      position: absolute;
+      padding: 0 0 0 0;
+      overflow: auto;
+      z-index: 1;
+      text-align: left;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      min-width: 200px;
+      border-radius: 15px;
+      background-color: transparent;
+    }
+    #dropdown-products li:hover{
+      background-color: rgba(0,0,0,0.2);
+    }
+    #menu-products:hover #dropdown-products {
+      display: block;
+    }
+  </style>
+  </header>
+  <div class="container">
+  <header>Admission Form</header>
+    <form method="post" action="https://rake.red/api/dazzlers/contact">
+    <div class="form first">
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Surname <i class='bx bxs-user'></i></label>
+                                        <input type="text" name="surname" placeholder="Surname" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Other Names <i class='bx bxs-user'></i></label>
+                                        <input type="text" name="othernames" placeholder="Other Names" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Nickname <i class='bx bxs-user'></i>  </label>
+                                        <input type="text" name="nickname" placeholder="Nickname" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Date Of Birth <i class='bx bxs-cake'></i></label>
+                                        <input type="date" name="dateofbirth" placeholder="Date Of Birth" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Gender<i class='bx bx-male-female' ></i></label>
+                                        <select required>
+                                            <option disabled selected hidden>Select gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Phone Number<i class='bx bxs-phone' ></i></label>
+                                        <input type="number" name="number" placeholder="Phone Number" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Email<i class='bx bxl-gmail' ></i></label>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Residential Address<i class='bx bxs-building-house' ></i></label>
+                                        <input type="text" name="address" placeholder="Residential Address" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Experience<i class='bx bxs-time' ></i></label>
+                                        <input type="text" name="experience" placeholder="Years Of Experience" required>
+                                    </div>
+                                </div>
+            
+                          
+                                <button type="submit" class="sumbit">
+                                    <span class="btnText">Submit</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+            </div>
+          </form>
+        </div>
+      <script src="signup.js"></script>
+    </body>
+    </html>
