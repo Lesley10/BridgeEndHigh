@@ -1,6 +1,6 @@
 
 function see(){
-document.getElementById('demo').innerHTML = 'Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria, Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. Our emerging educational programs are designed to prepare students for global competitiveness and academic excellence, with a particular focus on equipping them for international examinations such as the IGCSE, SAT, and TOEFL.';
+document.getElementById('demo').innerHTML = 'Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria, Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. Our emerging educational programs are designed to prepare students for global competitiveness and academic excellence, with a particular focus on equipping them for international examinations such as the IGCSE, SAT, and TOEFL. <a href="edu.html"> Learn More </a>';
 document.getElementById('learn').style.display = 'none';
 document.getElementById('hide').style.display = 'block';
 }
@@ -12,7 +12,7 @@ function see2(){
 	}
 
 function hide(){
-    document.getElementById('demo').innerHTML = 'Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria, Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities';
+    document.getElementById('demo').innerHTML = 'Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria, Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. <a href="edu.html"></a>';
     document.getElementById('hide').style.display = 'none';
 	document.getElementById('learn').style.display = 'block';
 
