@@ -241,12 +241,12 @@ nav {
 }
 .sub-title2{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     color:  #080808;
     margin: 0;
     text-align: left;
     background-image: url(img/school.png);
-    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
     line-spacing: 0.5px;
     
