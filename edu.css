@@ -74,7 +74,7 @@ nav {
     color: rgb(255, 123, 0);
   }
   nav .logo {
-    margin: 6px 6px 6px 60px;
+    margin: 6px 6px 6px 10px;
     cursor: pointer;
     text-transform: uppercase;
   }
@@ -607,6 +607,7 @@ nav {
 
     }
 
+  
 
 
   .hero{
@@ -638,7 +639,9 @@ nav {
 .hero .column-2 p{
     width: 92%;
 }
-
+#about{
+    padding: 20px 0;
+}
 .about{
     flex-wrap: wrap;
     flex-direction: column;
@@ -665,16 +668,7 @@ nav {
     align-items: center;
 }
 
-header{
-    background: url(./img/photo.png);
-    background-position: center;
-    background-repeat: no-repeat;  
-    background-size: 100%;
-    min-height: 55vh;
-    border-bottom: rgb(2, 2, 65) 10px solid;
-   
-    margin-top: 0;   
-}
+
 .footer{
     flex-direction: column;
 }
