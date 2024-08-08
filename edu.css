@@ -247,7 +247,7 @@ nav {
     margin: 0;
     text-align: left;
     background-image: url(img/school.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     
 }
