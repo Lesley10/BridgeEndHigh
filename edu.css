@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    background-image: navy;
 }
 
 *{
@@ -246,7 +247,6 @@ nav {
     color:  #080808;
     margin: 0;
     text-align: left;
-    background-image: rgba(3, 3, 107, 0.909);
     color: #ffbf00;
     line-spacing: 0.5px;
     
