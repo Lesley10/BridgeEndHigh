@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background-image: navy;
+    background-color: navy;
 }
 
 *{
@@ -242,13 +242,14 @@ nav {
     text-align: center;
 }
 .sub-title2{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 700;
     color:  #080808;
     margin: 0;
     text-align: left;
     color: #ffbf00;
     line-spacing: 0.5px;
+    
     
     
 }
