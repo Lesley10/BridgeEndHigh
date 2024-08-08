@@ -240,15 +240,16 @@ nav {
     text-align: center;
 }
 .sub-title2{
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 1.5px;
     color:  #080808;
     margin: 0;
     text-align: left;
     background-image: url(img/school.png);
     background-size: cover;
     background-repeat: no-repeat;
+    line-spacing: 0.5px;
+    
     
 }
 .sub-title a{
