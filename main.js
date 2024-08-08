@@ -12,7 +12,7 @@ function see2(){
 	}
 
 function hide(){
-    document.getElementById('demo').innerHTML = 'Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria, Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. <a href="edu.html"> Learn More</a>';
+    document.getElementById('demo').innerHTML = 'Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria, Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. <br> <a href="edu.html"> Learn More</a>';
     document.getElementById('hide').style.display = 'none';
 	document.getElementById('learn').style.display = 'block';
 
