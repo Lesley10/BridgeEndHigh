@@ -6,7 +6,7 @@ document.getElementById('hide').style.display = 'block';
 }
 
 function see2(){
-	document.getElementById('demo2').innerHTML = 'Bridge-End High Schools laboratories are designed to provide students with a rich, hands-on learning experience that meets international standards. Each laboratory is equipped with advanced tools and resources, ensuring that students gain practical skills and knowledge in their respective fields. Our commitment to excellence in education is reflected in these state-of-the-art facilities, preparing students for academic success and future careers in science, technology, engineering, arts, and home economics.';
+	document.getElementById('demo2').innerHTML = 'At BHS, we believe that good facilities play a crucial role in shaping students academic and personal growth. Modern classrooms equipped with smart boards and technology create an engaging learning environment. Well-maintained laboratories encourage hands-on experiments, fostering a deeper understanding of scientific concepts.';
 	document.getElementById('btn3').style.display = 'block';
 	document.getElementById('learn2').style.display = 'none';
 	}
