@@ -248,6 +248,7 @@ nav {
     text-align: left;
     background-image: url(img/school.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     
 }
 .sub-title a{
