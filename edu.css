@@ -14,17 +14,7 @@ body{
     font-weight: 600;
     font-style: normal;
   }
-header{
-    background: url(./img/photo.png);
-    background-position: center;
-    background-repeat: no-repeat;  
-    background-size: 100%;
-    min-height: 110vh;
-    border-bottom: rgb(2, 2, 65) 10px solid;
-    background-position-x: px;
-    background-position-y: -550px;
-    margin-top: 0;
-}
+
 
 .active-link {
     color: navy;
@@ -40,7 +30,7 @@ nav {
 
   }
  nav .mainMenu .active-nav{
-    color: #fff;
+    color: navy;
  }
   nav .mainMenu {
     display: flex;
@@ -200,11 +190,11 @@ nav {
 
 
 #about{
-    padding: 80px 0 40px 0;
+    padding: 20px 79px;
     color: #080808;
 }
 .about{
-    display: flex;
+   
     flex-wrap: wrap;
     justify-content: space-between;
 }
