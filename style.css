@@ -6,7 +6,6 @@ body{
 
 *{
     box-sizing: border-box;
-    
    
 }
 .poppins-semibold {
@@ -391,14 +390,15 @@ nav {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    padding: 5%;
+    padding: 5% 5% 5% 0;
     display: flex;
 }
 
 .work img{
-    width: 90%;
+    width: 105%;
     border-radius: 10px;
     display: block;
+    
     transition: transform .5s;
 }
 
