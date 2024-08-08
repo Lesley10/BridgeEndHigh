@@ -200,7 +200,7 @@ nav {
 }
 .about{
    display: block;
-   padding: 40px;
+   padding: 0   ;
    
 }
 
@@ -613,14 +613,11 @@ nav {
 @media only screen and (max-width: 750px){
     *{
         width: 100%;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        
         margin: 0;
 
     }
- body{
-    overflow: hidden;
- }
+ 
 
 
   .hero{
