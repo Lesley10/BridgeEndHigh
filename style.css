@@ -516,10 +516,12 @@ nav {
     width: 100%;
     padding: 15px;
     background: gold;
-    color: navy;
     
 }
 
+.footer .h2{
+    color: navy;
+}
 
 .footer-academics{
     
@@ -555,7 +557,9 @@ nav {
     color: #ababab;
     padding: 5px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
+    color: navy;
+    font-weight: 400;
 
     
 }
