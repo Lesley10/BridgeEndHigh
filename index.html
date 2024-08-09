@@ -91,7 +91,7 @@ position: absolute;
 @media (max-width: 800px) {
     #menu-products{
        display:block;
-        height: 200px;
+        height: 160px;
        display: block;
        overflow: hidden;
        
@@ -136,15 +136,15 @@ position: absolute;
                             <h1 class="sub-title2">About Us</h1>
                             <p><h2>Conducive Learning Environment</h2> <br>
 
-                                At Bridge-End High School, we prioritize creating a learning environment that stimulates intellectual curiosity and academic achievement. Our state-of-the-art classrooms are equipped with the latest educational technology, providing students with the tools they need to engage deeply with their studies. Our dedicated faculty members are passionate about teaching and are committed to personalized instruction, ensuring that each student receives the attention and support they need to succeed. <br><br><a href="">Read More</a>
+                                At Bridge-End High School, we prioritize creating a learning environment that stimulates intellectual curiosity and academic achievement. Our state-of-the-art classrooms are equipped with the latest educational technology, providing students with the tools they need to engage deeply with their studies. Our dedicated faculty members are passionate about teaching and are committed to personalized instruction, ensuring that each student receives the attention and support they need to succeed. <br><br>
                                 
                               <h2>  Encouraging Social Interactions</h2>
                                 
-                                We believe that social development is as crucial as academic growth. Bridge-End High School offers numerous opportunities for students to interact and collaborate, both inside and outside the classroom. Our extracurricular programs, ranging from sports teams to arts clubs, provide platforms for students to explore their interests, develop teamwork skills, and form lasting friendships. <br><br><a href="">Read More</a>
+                                We believe that social development is as crucial as academic growth. Bridge-End High School offers numerous opportunities for students to interact and collaborate, both inside and outside the classroom. Our extracurricular programs, ranging from sports teams to arts clubs, provide platforms for students to explore their interests, develop teamwork skills, and form lasting friendships. <br><br>
                                 
                               <h2>  Developing the Learner's Mind</h2>
                                 
-                                The holistic development of our students' minds is a core principle at Bridge-End High School. Beyond academic and social skills, we emphasize critical thinking, creativity, and emotional intelligence. Our curriculum includes a variety of enrichment programs, such as debate clubs, science fairs, and creative writing workshops, that encourage students to think critically and express themselves creatively. We also offer mindfulness and wellness programs to help students manage stress and build emotional resilience. <br><br> <a href="">Read More</a></p>
+                                The holistic development of our students' minds is a core principle at Bridge-End High School. Beyond academic and social skills, we emphasize critical thinking, creativity, and emotional intelligence. Our curriculum includes a variety of enrichment programs, such as debate clubs, science fairs, and creative writing workshops, that encourage students to think critically and express themselves creatively. We also offer mindfulness and wellness programs to help students manage stress and build emotional resilience. <br><br> </p>
                                
         
         
@@ -242,18 +242,20 @@ position: absolute;
                 <div class="footer-academics">
                     <h2>Academics</h2>
                     <div class="feet">
-             <a href="">Our Academics</a>
-             <a href="">Mission Statement</a>
-             <a href="">Principals Welcome</a>
+             <a href="edu.html">Our Academical Programmes</a>
+             <a href="admission.html">Get Admission</a>
+             <a href="princi.html">Principals Welcome</a>
              </div>
                    </div>
+    
+         
     
                 <div class="footer-academics">
                    <h2>Useful Links</h2>
    <div class="feet">
-    <a href="">About Us</a>
-    <a href="">Extra Curricular</a>
-    <a href="">Gallery</a>
+    <a href="infa.html">Our Infastructures</a>
+    <a href="bis.html">About Bridge End International School</a>
+    <a href="GoverningBoard.html">The Governing Board</a>
     </div>
                 </div>
                
@@ -261,30 +263,17 @@ position: absolute;
                     <div class="foot">
                         <p>Bridge-End High School, Calabar, Nigeria. Copyright, 2024 &copy;</p>
                         <div class="icons">
-                           <a href=""> <i class='bx bxl-facebook-circle' ></i>
+                           <a href="https://www.facebook.com/profile.php?id=61559130064201&mibextid=ZbWKwL"> <i class='bx bxl-facebook-circle' ></i>
                           </a>
-                          <a href="">  <i class='bx bxl-instagram-alt' ></i></a>
-                          <a href=""><i class='bx bxs-phone'></i></a>
+                          <a href="https://www.instagram.com/bridgeendhigh/">  <i class='bx bxl-instagram-alt' ></i></a>
+                          <a onclick="msg()"><i class='bx bxs-phone'></i></a>
                         </div>
                     </div>
 
          </section>
-        <script src="app.js"></script>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link")
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab")
-                }
-        
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab")
-            }
-        </script>        
+         <script src="alert.js"></script>
+        <script src="app.js"></script>   
         <script src="main.js"></script>
+        
 </body>
 </html>
