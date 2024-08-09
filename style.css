@@ -664,10 +664,6 @@ body{
 
 .about-col-1{
     margin-left: 0;
-    background-image: rgba(4,9,30,0.7),url('img/iwasam.jpg');
-    background-attachment: fixed;
-    background-width: 100%;
-    background-height: 200px;
 }
 
 .about-col-1 img{
