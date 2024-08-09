@@ -16,58 +16,100 @@
 <body>
   <header>
     <nav>
-      <div class="logo"><h1>Bridge End High School</h1></div>
-      <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <div class="logo"><h1>Bridge End High School</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
-          <li><a href="index.html">Home</a></li>
-          <li id="menu-products">
-            <a href="#">About</a>
+            <li><a href="index.html">Home</a></li>
+            <li id="menu-products">
+             <a href="" class="main">  About <i class='bx bxs-chevron-down'></i></a>
             <ul id="dropdown-products">
-            <li><a href="unique.html">Our Uniqueness</a></li>
-            <li><a href="">Bridge-End International School</a></li>
-            <li><a href="edu.html">Educational Programmes</a></li>
+                <li><a href="unique.html">Our Uniqueness</a></li>
+                <li><a href="bis.html">Bridge-End International School</a></li>
+                <li><a href="edu.html">Educational Programmes</a></li>
+            
             </ul>
-          </li>
-          <li><a href="admission.html"  class="active-nav">Admission</a></li>
-          <li><a href="infas.html">Infastructures</a></li>
-          <li><a href="#">Governing Board</a></li>
-          <li><a href="infa.html">Laboratories</a></li>
-          <div class="closeMenu"><i class="fa fa-times"></i></div>
-          <span class="icons2">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-          </span>
+            </li>
+            <li><a href="admission.html" class="active-nav">Admission</a></li>
+            <li><a href="infas.html">Infastructures</a></li>
+            
+          
+            <li><a href="GoverningBoard.html">Governing Board</a></li>
+           
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons2">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+               
+            </span>
         </ul>
     </nav>
-  <style>
+<style>
     #menu-products{
-      position: relative;
-      display: inline-block;  
+        position: relative;
+        display: inline-block;
+        
+        
+    }
+  
+    #dropdown-products li a{
+       font-weight: bolder;
     }
     #dropdown-products {
-      display: none;
-      position: absolute;
-      padding: 0 0 0 0;
-      overflow: auto;
-      z-index: 1;
-      text-align: left;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      min-width: 200px;
-      border-radius: 15px;
-      background-color: transparent;
-    }
-    #dropdown-products li:hover{
-      background-color: rgba(0,0,0,0.2);
-    }
-    #menu-products:hover #dropdown-products {
-      display: block;
-    }
-  </style>
-  </header>
+display: none;
+position: absolute;
+padding: 0 0 0 0;
+overflow: auto;
+z-index: 1;
+text-align: left;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+min-width: 200px;
+border-radius: 15px;
+min-height: 150px;
+background-color: transparent;
+transition:  transform .5s ease-in-out;
+}
+
+#dropdown-products li:hover{
+background-color: rgba(0,0,0,0.2);
+}
+
+#menu-products:hover #dropdown-products {
+display: block;
+transform: scale(0.999999999999999999999999999999999999);
+
+
+
+}
+.ico{
+display: inline;
+   
+
+}
+
+@media (max-width: 800px) {
+#menu-products{
+   display:block;
+    height: 180px;
+   display: block;
+   overflow: hidden;
+   
+}
+#dropdown-products{
+    display: block;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+
+}
+</style>
+    </header>
+
   <div class="container">
   <header>Admission Form</header>
-    <form method="post" action="https://rake.red/api/dazzlers/contact">
+    <form method="post" action="https://rake.red/api/bridgeend/bridgeend">
     <div class="form first">
                                 <div class="fields">
                                     <div class="input-field">
@@ -80,10 +122,7 @@
                                         <input type="text" name="othernames" placeholder="Other Names" required>
                                     </div>
             
-                                    <div class="input-field">
-                                        <label>Nickname <i class='bx bxs-user'></i>  </label>
-                                        <input type="text" name="nickname" placeholder="Nickname" required>
-                                    </div>
+                                   
             
                                     <div class="input-field">
                                         <label>Date Of Birth <i class='bx bxs-cake'></i></label>
@@ -91,7 +130,7 @@
                                     </div>
             
                                     <div class="input-field">
-                                        <label>Gender<i class='bx bx-male-female' ></i></label>
+                                        <label>Gender <i class='bx bx-male-female' ></i></label>
                                         <select required>
                                             <option disabled selected hidden>Select gender</option>
                                             <option>Male</option>
@@ -101,23 +140,23 @@
                                     </div>
             
                                     <div class="input-field">
-                                        <label>Phone Number<i class='bx bxs-phone' ></i></label>
+                                        <label>Phone Number <i class='bx bxs-phone' ></i></label>
                                         <input type="number" name="number" placeholder="Phone Number" required>
                                     </div>
             
                                     <div class="input-field">
-                                        <label>Email<i class='bx bxl-gmail' ></i></label>
+                                        <label>Email <i class='bx bxl-gmail' ></i></label>
                                         <input type="email" name="email" placeholder="Email" required>
                                     </div>
             
                                     <div class="input-field">
-                                        <label>Residential Address<i class='bx bxs-building-house' ></i></label>
-                                        <input type="text" name="address" placeholder="Residential Address" required>
+                                        <label>Residential Address <i class='bx bxs-building-house' ></i></label>
+                                        <input type="text" name="address" placeholder="Residential Address">
                                     </div>
             
                                     <div class="input-field">
-                                        <label>Experience<i class='bx bxs-time' ></i></label>
-                                        <input type="text" name="experience" placeholder="Years Of Experience" required>
+                                        <label>Admission Class <i class='bx bxs-graduation'></i></label>
+                                        <input type="text" name="experience" placeholder="Admission Class" required>
                                     </div>
                                 </div>
             
@@ -130,5 +169,41 @@
           </form>
         </div>
       <script src="signup.js"></script>
+      <section>
+        <div class="footer">
+            <div class="footer-academics">
+                <h2>Academics</h2>
+                <div class="feet">
+         <a href="edu.html">Our Academical Programmes</a>
+         <a href="admission.html">Get Admission</a>
+         <a href="princi.html">Principals Welcome</a>
+         </div>
+               </div>
+
+     
+
+            <div class="footer-academics">
+               <h2>Useful Links</h2>
+<div class="feet">
+<a href="infa.html">Our Infastructures</a>
+<a href="bis.html">About Bridge End International School</a>
+<a href="GoverningBoard.html">The Governing Board</a>
+</div>
+            </div>
+           
+                </div>
+                <div class="foot">
+                    <p>Bridge-End High School, Calabar, Nigeria. Copyright, 2024 &copy;</p>
+                    <div class="icons">
+                       <a href="https://www.facebook.com/profile.php?id=61559130064201&mibextid=ZbWKwL"> <i class='bx bxl-facebook-circle' ></i>
+                      </a>
+                      <a href="https://www.instagram.com/bridgeendhigh/">  <i class='bx bxl-instagram-alt' ></i></a>
+                      <a onclick="msg()"><i class='bx bxs-phone'></i></a>
+                    </div>
+                </div>
+
+     </section>
+     <script src="alert.js"></script>
+    <script src="app.js"></script>   
     </body>
     </html>
