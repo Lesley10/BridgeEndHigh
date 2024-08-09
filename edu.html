@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <nav>
             <div class="logo"><h1>Bridge End High School</h1></div>
@@ -22,19 +21,20 @@
             <ul class="mainMenu">
                 <li><a href="index.html">Home</a></li>
                 <li id="menu-products">
-                    <a href="#" class="active-nav">About <i class='bx bxs-chevron-down'></i></a>
+                 <a href="" class="main">  About <i class='bx bxs-chevron-down'></i></a>
                 <ul id="dropdown-products">
                     <li><a href="unique.html">Our Uniqueness</a></li>
                     <li><a href="bis.html">Bridge-End International School</a></li>
                     <li><a href="edu.html" class="active-nav">Educational Programmes</a></li>
-                    <li><a href="GoverningBoard.html">Governing Board</a></li>
+                
                 </ul>
                 </li>
                 <li><a href="admission.html">Admission</a></li>
-                <li><a href="infa.html">Infastructures</a></li>
-                <li><a href="#">Reviews</a></li>
-    
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="infas.html">Infastructures</a></li>
+                
+              
+                <li><a href="GoverningBoard.html">Governing Board</a></li>
+               
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
                 <span class="icons2">
                     <i class="fab fa-facebook"></i>
@@ -51,6 +51,10 @@
             
             
         }
+      
+        #dropdown-products li a{
+           font-weight: bolder;
+        }
         #dropdown-products {
   display: none;
 position: absolute;
@@ -61,8 +65,9 @@ position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   min-width: 200px;
   border-radius: 15px;
+  min-height: 150px;
   background-color: transparent;
- 
+ transition:  transform .5s ease-in-out;
 }
 
 #dropdown-products li:hover{
@@ -71,9 +76,33 @@ position: absolute;
 
 #menu-products:hover #dropdown-products {
   display: block;
+  transform: scale(0.999999999999999999999999999999999999);
   
  
   
+}
+.ico{
+    display: inline;
+       
+    
+}
+
+@media (max-width: 800px) {
+    #menu-products{
+       display:block;
+        height: 160px;
+       display: block;
+       overflow: hidden;
+       
+    }
+    #dropdown-products{
+        display: block;
+        height: 200px;
+        overflow: hidden;
+    }
+   
+
+
 }
     </style>
         </header>
@@ -85,7 +114,7 @@ position: absolute;
                     <div class="about">
                     
                         <div class="about-col-2">
-                           <h1 class="sub-title2">Our Emerging Education Programs</h1>
+                           <h1 class="subtitle2"> Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria </h1>
 
                             Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. Our emerging educational programs are designed to prepare students for global competitiveness and academic excellence, with a particular focus on equipping them for international examinations such as the IGCSE, SAT, and TOEFL.
                             
@@ -135,32 +164,25 @@ position: absolute;
 
        
 
-         <section>
+        <section>
             <div class="footer">
                 <div class="footer-academics">
                     <h2>Academics</h2>
                     <div class="feet">
-             <a href="">Our Academics</a>
-             <a href="">Mission Statement</a>
-             <a href="">Principals Welcome</a>
+             <a href="edu.html">Our Academical Programmes</a>
+             <a href="admission.html">Get Admission</a>
+             <a href="princi.html">Principals Welcome</a>
              </div>
                    </div>
     
-          <div class="footer-academics">
-           <h2>Academics</h2>
-           <div class="feet">
-    <a href="">Our Academics</a>
-    <a href="">Mission Statement</a>
-    <a href="">Principals Welcome</a>
-    </div>
-          </div>
+         
     
                 <div class="footer-academics">
                    <h2>Useful Links</h2>
    <div class="feet">
-    <a href="">About Us</a>
-    <a href="">Extra Curricular</a>
-    <a href="">Gallery</a>
+    <a href="infa.html">Our Infastructures</a>
+    <a href="bis.html">About Bridge End International School</a>
+    <a href="GoverningBoard.html">The Governing Board</a>
     </div>
                 </div>
                
@@ -168,30 +190,15 @@ position: absolute;
                     <div class="foot">
                         <p>Bridge-End High School, Calabar, Nigeria. Copyright, 2024 &copy;</p>
                         <div class="icons">
-                           <a href=""> <i class='bx bxl-facebook-circle' ></i>
+                           <a href="https://www.facebook.com/profile.php?id=61559130064201&mibextid=ZbWKwL"> <i class='bx bxl-facebook-circle' ></i>
                           </a>
-                          <a href="">  <i class='bx bxl-instagram-alt' ></i></a>
-                          <a href=""><i class='bx bxs-phone'></i></a>
+                          <a href="https://www.instagram.com/bridgeendhigh/">  <i class='bx bxl-instagram-alt' ></i></a>
+                          <a onclick="msg()"><i class='bx bxs-phone'></i></a>
                         </div>
                     </div>
 
          </section>
+         <script src="alert.js"></script>
         <script src="app.js"></script>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link")
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab")
-                }
-        
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab")
-            }
-        </script>        
-        <script src="main.js"></script>
 </body>
 </html>
