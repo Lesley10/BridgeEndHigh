@@ -181,19 +181,19 @@ nav {
     display: block;
     margin: 0 0 0 45px;
     width: fit-content;
-    background: gold;
-    font-weight: 500;
+    background: rgb(2, 2, 65);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: navy;
+    color: #080808;
     transition: background .5s;
-    
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 .btn:hover{
     background: transparent;
-    border: gold 2px solid;
+    border: rgb(2, 2, 65) 2px solid;
     cursor: pointer;
     color: #080808;
 }
@@ -395,7 +395,7 @@ nav {
 }
 
 .work img{
-    width: 105%;
+    width: 63%;
     border-radius: 10px;
     display: block;
     
@@ -515,13 +515,9 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 15px;
-    background: gold;
-    
+    background: #09035a;
 }
 
-.footer .h2{
-    color: navy;
-}
 
 .footer-academics{
     
@@ -530,8 +526,7 @@ nav {
 }
 
 .footer-academics h2{
-    color: snow;
-    
+    color: honeydew;
 }
 
 .footer-academics .feet{
@@ -558,9 +553,7 @@ nav {
     color: #ababab;
     padding: 5px;
     text-decoration: none;
-    font-size: 20px;
-    color: navy;
-    font-weight: 400;
+    font-size: 13px;
 
     
 }
@@ -625,10 +618,7 @@ nav {
 
     }
 
-body{
-    background-color: navy;
-    color: white;
-}
+
 
   .hero{
     display: flex;
@@ -657,10 +647,7 @@ body{
 }
 
 .hero .column-2 p{
-    width: 100%;
-    font-size: 18px;
-    
-    
+    width: 92%;
 }
 
 .about{
@@ -674,8 +661,8 @@ body{
 }
 
 .about-col-1 img{
-    width: 100%;
-    height: 200px;
+    width: 60%;
+    height: 50%;
     margin-left: 70px;
 }
 .about-col-2{
@@ -720,11 +707,12 @@ header{
     overflow: hidden;
 }
 
+.work img{
+    width: 105%;
+}
+
 .hero .column-2 h1{
-    margin: auto 25px;
-    color: gold;
-    font-weight: 700;
-    align-items: center;
+    margin-left: 25px;
 }
 
 
