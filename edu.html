@@ -1,705 +1,204 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-*{
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge-End High School|Educational Programmes</title>
+    <link rel="stylesheet" href="./edu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-   
-}
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-
-.active-link {
-    color: navy;
-    
-}
-nav {
-    background: transparent;
-    color: #ababab;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-
-  }
- nav .mainMenu .active-nav{
-    color: navy;
- }
-  nav .mainMenu {
-    display: flex;
-    list-style: none;
-  }
-  nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-   font-weight: 600;
-    color: #ababab;
-    font-size: 18px;
-    transition: 0.2s ease-in-out;
-  }
-  nav .mainMenu li a:hover {
-    color: navy;
-    font-weight: bold;
-  }
-  nav .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-  }
-  nav .mainMenu .closeMenu,
-  .icons2 i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-  }
-  .fa-facebook:hover {
-    color: rgb(0, 110, 255);
-  }
-  .fa-twitter:hover {
-    color: rgb(86, 154, 243);
-  }
-  .fa-instagram:hover {
-    color: rgb(255, 0, 191);
-  }
-  .fa-github:hover {
-    color: rgb(255, 123, 0);
-  }
-  nav .logo {
-    margin: 6px 6px 6px 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  @media (max-width: 800px) {
-    nav .mainMenu {
-      height: 100vh;
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      left: 0px;
-      z-index: 10;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: rgb(0, 0, 0);
-      transition: top 1s ease 0s;
-      display: none;
-    }
-    nav .mainMenu .closeMenu {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: -10px;
-    }
-    nav .openMenu {
-      display: block;
-      width: 20%;
-      margin-left: 50px;
-      margin-top: 25px;
-      margin-right: 0;
-    }
-   
-    nav .mainMenu li a:hover {
-      background: none;
-      color: #fff;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>Bridge End High School</h1></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li id="menu-products">
+                 <a href="" class="main">  About <i class='bx bxs-chevron-down'></i></a>
+                <ul id="dropdown-products">
+                    <li><a href="unique.html">Our Uniqueness</a></li>
+                    <li><a href="bis.html">Bridge-End International School</a></li>
+                    <li><a href="edu.html" class="active-nav">Educational Programmes</a></li>
+                
+                </ul>
+                </li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="infas.html">Infastructures</a></li>
+                
+              
+                <li><a href="GoverningBoard.html">Governing Board</a></li>
+               
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons2">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                   
+                </span>
+            </ul>
+        </nav>
+    <style>
+        #menu-products{
+            position: relative;
+            display: inline-block;
+            
+            
+        }
       
+        #dropdown-products li a{
+           font-weight: bolder;
+        }
+        #dropdown-products {
+  display: none;
+position: absolute;
+  padding: 0 0 0 0;
+  overflow: auto;
+  z-index: 1;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 200px;
+  border-radius: 15px;
+  min-height: 150px;
+  background-color: transparent;
+ transition:  transform .5s ease-in-out;
+}
+
+#dropdown-products li:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#menu-products:hover #dropdown-products {
+  display: block;
+  transform: scale(0.999999999999999999999999999999999999);
+  
+ 
+  
+}
+.ico{
+    display: inline;
+       
+    
+}
+
+@media (max-width: 800px) {
+    #menu-products{
+       display:block;
+        height: 160px;
+       display: block;
+       overflow: hidden;
+       
     }
-    .icons2{
-        display: flex;
-        padding: 35px;
+    #dropdown-products{
+        display: block;
+        height: 200px;
+        overflow: hidden;
     }
-    .icons2 i {
-      font-size: 25px;
-      padding: 10px 10px 10px 30px;   
-       }
+   
+
+
+}
+    </style>
+        </header>
+
       
-  }
-  
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about">
+                    
+                        <div class="about-col-2">
+                           <h1 class="subtitle2"> Emerging Educational Programs at Bridge-End High School, Calabar, Nigeria </h1>
 
+                            Bridge-End High School is at the forefront of innovative education in Nigeria, committed to providing our students with world-class learning opportunities. Our emerging educational programs are designed to prepare students for global competitiveness and academic excellence, with a particular focus on equipping them for international examinations such as the IGCSE, SAT, and TOEFL.
+                            
+                            <h2>Comprehensive Academic Programs</h2>
+                            
+                            Bridge-End International School offers a broad and balanced curriculum that meets international standards. Our academic programs are meticulously crafted to nurture critical thinking, creativity, and problem-solving skills. We integrate modern teaching methods with advanced technology, providing a dynamic and engaging learning environment.
+                            
+                            
+                            
+                           <h2> Future Outlook </h2>
+                            
+                            Bridge-End High School is committed to continuous improvement and innovation in education. As we look to the future, we aim to further enhance our international examination programs by:
+                            
+                            Expanding Curriculum Offerings
+                             We plan to introduce additional subjects and specialized courses aligned with global educational standards. This will provide students with more options to explore their interests and talents.
+                            
+                           <h2> Preparation for International Examinations </h2>
+                            
+                            We understand the importance of international examinations in opening doors to global educational opportunities. Therefore, our school places a strong emphasis on preparing students for exams such as the IGCSE, SAT, and TOEFL.
+                            
+                           <h2> IGCSE (International General Certificate of Secondary Education) </h2>
+                            Our IGCSE program is tailored to develop a deep understanding of subjects and foster academic excellence. We offer a wide range of subjects, and our experienced teachers provide personalized guidance to ensure students achieve top grades. Regular mock exams and assessment sessions help students become familiar with the exam format and expectations.
+                            
+                            <h2>SAT (Scholastic Assessment Test)</h2>
+                            Bridge-End International School offers an intensive SAT preparation course that covers all sections of the exam, including Mathematics, Evidence-Based Reading, and Writing. Our curriculum includes practice tests, time management strategies, and critical thinking exercises to help students achieve high scores and secure admission to prestigious universities worldwide.
+                            
+                           <h2> TOEFL (Test of English as a Foreign Language) </h2>
+                            For students aiming to study abroad, proficiency in English is crucial. Our TOEFL preparation program focuses on enhancing students' reading, writing, speaking, and listening skills. We use a blend of interactive lessons, practice tests, and real-life language use scenarios to ensure students are well-prepared to excel in the national and international exam.
+                            
+                           <h2> Advanced Technological Integration </h2>
+                            We will continue to invest in cutting-edge educational technology, such as virtual reality labs, AI-driven learning tools, and online collaborative platforms, to enrich our teaching and learning processes.
+                            
+                             <h2>Global Partnerships </h2>
+                            Our school is actively seeking partnerships with leading international educational institutions. These collaborations will provide students with unique opportunities for exchange programs, joint research projects, and exposure to diverse academic environments.
+                            
+                             <h2>Enhanced Support Services </h2>
+                               We are committed to offering robust support services, including personalized academic counseling, college application assistance, and career guidance. Our goal is to ensure every student is well-prepared for their academic journey and future career path.
+                            
+                           <p> Bridge-End High School is dedicated to providing a world-class education that prepares students for global success. Our emerging educational programs, combined with our focus on international examinations, ensure that our students are equipped with the knowledge, skills, and confidence to excel on the global stage. We are excited about the future and invite you to join us in this journey of academic excellence and personal growth. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
 
+       
 
-
-
-.hero{
-    display: flex;
-    justify-content: space-between;
-    width:90%;
-    padding: 5% 0 0 10%;
+        <section>
+            <div class="footer">
+                <div class="footer-academics">
+                    <h2>Academics</h2>
+                    <div class="feet">
+             <a href="edu.html">Our Academical Programmes</a>
+             <a href="admission.html">Get Admission</a>
+             <a href="princi.html">Principals Welcome</a>
+             </div>
+                   </div>
     
-}
-
-.hero .column-1 img{
-    border-radius: 10px;
-    width: 70%;
-    height: 70%;
+         
     
-}
-
-.hero .column-2{
-   
-    border-radius: 10px;
-    width: 50%;
-    flex-basis: 60%;
-}
-
-.hero .column-2 h1{
-    text-align: center;
-    letter-spacing: 1.1px;
-    font-size: 30px;
-    font-weight: 600;
-    color: rgb(2, 2, 65);
-}
-
-.hero .column-2 p{
-    letter-spacing: 1px;
-    line-height: 25px;
-    font-size: 16px;
-    width: 100%;
-    padding: 10px;
-    margin-left: 40px;
-    
-}
-.btn{
-    display: block;
-    margin: 0 0 0 45px;
-    width: fit-content;
-    background: rgb(2, 2, 65);
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #080808;
-    transition: background .5s;
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-.btn:hover{
-    background: transparent;
-    border: rgb(2, 2, 65) 2px solid;
-    cursor: pointer;
-    color: #080808;
-}
-
-
-#about{
-    padding: 20px 79px;
-    color: #080808;
-}
-.about{
-   
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-.about-col-1{
-    flex-basis: 35%;
-    margin-left: 140px;
-}
-
-.about-col-1 img{
-    width: 115%;
-    border-radius: 15px;
-}
-
-.about-col-2{
-    flex-basis: 47%;
-    width: 90%;
-}
-.about-col-2 p{
-    letter-spacing: 1.5px;
-    line-height: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
-}
-.about-col-2 h2{
-    margin-bottom: 5px;
-}
-
-.about-col-2 a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: navy;
-}
-.sub-title{
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    color:  #080808;
-    margin: 0;
-    text-align: center;
-}
-.sub-title2{
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    color:  #080808;
-    margin: 0;
-    text-align: left;
-}
-.sub-title a{
-    text-decoration: none;
-    color: #080808;
-}
- .sub-title a::after{
-    content: '';
-    width: 10px;
-    height: 3px;
-    background: navy;
-    position: absolute;
-    left: 8px;
-    bottom: -4px;
-    transition: 0.5s;
-    padding: 0;
-}
-.tab-titles{
-     display: flex;
-     margin: 20px 0 40px;
-}
-
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: navy;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: .5s;
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-}
-
-.tab-contents ul{
-    padding-left: 0;
-}
-
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 27px;
-}
-
-.tab-contents ul li span{
-    color: navy;
-    font-size: 16px;
-    letter-spacing: 1px;
-
-}
-
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab{
-    display: block;
-}
-
-#services{
-    padding: 0 8%;
-    margin-bottom: 5%;
-}
-
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div{
-    background: #ababab;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
-    transition: background 0.5s, transform .5s;
-    border-radius: 10px;
-}
-
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    letter-spacing: 1.5px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-
-.services-list div:hover{
-    background: navy;
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-.services-list div p{
-    line-height: 20px;
-    font-size: 16px;
-}
-
-.work-list{
-    display: block;
-    padding: 5% 5% 1% 5%;
-    margin-top: 0px;
-}
-
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    padding: 5%;
-    display: flex;
-}
-
-.work img{
-    width: 50%;
-    border-radius: 10px;
-    display: block;
-    transition: transform .5s;
-}
-
-.layer{
-    width: 50%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), navy);
-    border-radius: 10px;
-    position: absolute;
-    left: 40px;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height .5s;
-    color: #fff;
-}
-
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.layer a{
-    margin-top: 20px;
-    color: navy;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.work:hover .layer{
-    height: 90%;
-    cursor: pointer;
-}
-
-.info{
-    padding: 10%;
-}
-
-.info h4{
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    text-align: center;
-}
-.info p{
-    line-height: 27px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-
-.btn2{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid navy;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-size: 15px;
-    transition: background .5s;
-}
-
-.btn2:hover{
-    background: navy;
-    color: honeydew;
-    cursor: pointer;
-}
-
-.btn3{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid navy;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-size: 15px;
-    transition: background .5s;
-    background: navy;
-}
-
-.btn3:hover{
-    background: transparent;
-    color: honeydew;
-    cursor: pointer;
-    
-}
-
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 15px;
-    background: #09035a;
-}
-
-
-.footer-academics{
-    
-    margin: 0 150px ;
-    flex-basis: 33%;  
-}
-
-.footer-academics h2{
-    color: honeydew;
-}
-
-.footer-academics .feet{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    justify-content: end;
-    width: 100%;
-    padding: 0px;
-}
-.footer-usefullinks .feet{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-.footer-academics a{
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #ababab;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 13px;
-
-    
-}
-
-.footer-academics a:hover{
-    color: #fff;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-}
-
-
-
-
-
-
-.footer-academics h2{
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-.foot{
-    background: navy;
-    padding: 10px;
-    text-align: center;
-}
-
-
-
-.icons i{
-    color: #ababab;
-    font-size: 30px;
-    padding: 5px;
-}
-
-.foot p{
-    color: #ababab;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-.open-menu , .close-menu{
-    position: absolute;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
-}
-.open-menu{
-    top: 6%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-.close-menu{
-    right: 20px;
-}
-
-@media only screen and (max-width: 750px){
-    *{
-        width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-
-    }
-
-  
-
-
-  .hero{
-    display: flex;
-    justify-content: space-between;
-    width: 170%;
-    padding: 5% 10% 0 0;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero .column-1 img{
-    border-radius: 10px;
-    width: 50%;
-    height: 50%;
-    margin-left: 10px;
-    
-}
-
-.hero .column-2{
-    width: 60%;
-    margin: 0 300px 0 0;
-    padding: 0;
-    overflow: hidden;
-    
-    
-}
-
-.hero .column-2 p{
-    width: 92%;
-}
-#about{
-    padding: 20px 0;
-}
-.about{
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-}
-
-.about-col-1{
-    margin-left: 0;
-}
-
-.about-col-1 img{
-    width: 60%;
-    height: 50%;
-    margin-left: 70px;
-}
-.about-col-2{
-    width: 80%;
-    margin-left: 40px;
-}
-
-.work{
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.footer{
-    flex-direction: column;
-}
-.icons{
-    display: flex;
-    width: 40%;
-    margin-left: 110px;
-}
-.tab-links{
-    margin-right: 0;
-    
-    text-align: left;
-    overflow: hidden;
-}
-
-
-
-.about-col-2 p{
-    overflow: hidden;
-}
-
-.hero .column-2 h1{
-    margin-left: 25px;
-}
-
-
-.services-list p{
-    overflow: hidden;
-}
-
-.services-list i{
-    overflow: hidden;
-}
-}
+                <div class="footer-academics">
+                   <h2>Useful Links</h2>
+   <div class="feet">
+    <a href="infa.html">Our Infastructures</a>
+    <a href="bis.html">About Bridge End International School</a>
+    <a href="GoverningBoard.html">The Governing Board</a>
+    </div>
+                </div>
+               
+                    </div>
+                    <div class="foot">
+                        <p>Bridge-End High School, Calabar, Nigeria. Copyright, 2024 &copy;</p>
+                        <div class="icons">
+                           <a href="https://www.facebook.com/profile.php?id=61559130064201&mibextid=ZbWKwL"> <i class='bx bxl-facebook-circle' ></i>
+                          </a>
+                          <a href="https://www.instagram.com/bridgeendhigh/">  <i class='bx bxl-instagram-alt' ></i></a>
+                           <a href="tel:+2348037051236"><i class='bx bxs-phone'></i></a>
+                        </div>
+                    </div>
+
+         </section>
+         <script src="alert.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>
