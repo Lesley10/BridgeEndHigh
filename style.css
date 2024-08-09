@@ -182,12 +182,13 @@ nav {
     margin: 0 0 0 45px;
     width: fit-content;
     background: gold;
+    font-weight: 500;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: navy;
     transition: background .5s;
-    letter-spacing: 1px;
+    
 }
 
 .btn:hover{
